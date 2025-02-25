@@ -1,0 +1,143 @@
+*
+{
+margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+  
+}
+body {
+  min-block-size: 600dvh;
+}
+
+@keyframes grow-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#progress {
+  position: sticky;
+  top: 0px;
+   width: 10px;
+background-color:cyan;
+  padding-top: 50px;
+   animation: grow-progress linear forwards;
+  animation-timeline: scroll();
+ 
+ 
+}
+
+#loremIpsum{
+  left: 50%;
+
+height: 200vh;
+text-align:center;
+}
+
+h1{
+  text-align:center;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotateY(0turn);
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+
+#testimage {
+    position: sticky;
+top: 0px;
+width:395px;
+height:377px;
+    animation: spin linear forwards;
+    animation-timeline: scroll(); 
+  }
+
+
+  
+  #testimage2 {
+width:395px;
+height:377px;
+    animation: spin linear forwards;
+    
+    animation-timeline: view();
+    /* cover, contain, entry, exit*/
+    animation-range: cover 0% cover 100%;
+    /* animation-range-start: contain;
+    animation-range-end: contain; */
+ 
+  }
+
+  
+  #testimage3 {
+    width:395px;
+    height:377px;
+        animation: spin linear forwards;
+        
+        animation-timeline: view();
+        /* cover, contain, entry, exit*/
+        animation-range: contain;
+        /* animation-range-start: contain;
+        animation-range-end: contain; */
+     
+      }
+
+      #testimage4 {
+        width:395px;
+        height:377px;
+            animation: spin linear forwards;
+            
+            animation-timeline: view();
+            /* cover, contain, entry, exit*/
+            animation-range: entry;
+            /* animation-range-start: contain;
+            animation-range-end: contain; */
+         
+          }
+
+
+          #testimage5 {
+            width:395px;
+            height:377px;
+                animation: spin linear forwards;
+                
+                animation-timeline: view();
+                /* cover, contain, entry, exit*/
+                animation-range: exit;
+                /* animation-range-start: contain;
+                animation-range-end: contain; */
+             
+              }
+
+
+              #testimage6 {
+                width:395px;
+                height:377px;
+                    animation: spin linear forwards;
+                    
+                    animation-timeline: view();
+                    /* cover, contain, entry, exit*/
+                    animation-range: cover 25% cover 80%;
+                    /* animation-range-start: contain;
+                    animation-range-end: contain; */
+              }
+              #testimage7 {
+                width:395px;
+                height:377px;
+                    animation: spin linear forwards;
+                    
+                    animation-timeline: view();
+                    /* cover, contain, entry, exit*/
+                    animation-range: cover 40% contain 60%;
+                    /* animation-range-start: contain;
+                    animation-range-end: contain; */
+                 
+                  }
